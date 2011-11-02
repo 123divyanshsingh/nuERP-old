@@ -1,0 +1,7 @@
+name: Items
+description:
+  Creates a list of items in the store regardless of availability
+tags: external
+
+report : [<Item>]
+report = [i | i : <Item> <- map(\e -> e.1) entities]

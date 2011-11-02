@@ -1,0 +1,53 @@
+ResourceType is Data.
+ResourceType is abstract.
+
+Currency is a ResourceType.
+Currency is abstract.
+
+DKK is a Currency.
+
+ItemType is a ResourceType.
+ItemType is abstract.
+
+Product is an ItemType.
+Product has a String called sku.
+Product has a String called name.
+Product has a String called description.
+
+Agent is a Data.
+
+Me is an Agent.
+
+Customer is a Agent.
+Customer has a String called name.
+Customer has a list of Address called addresses.
+
+Vendor is a Agent.
+
+Address is Data.
+Address has a String.
+Address has a Country.
+
+Resource is Data.
+Resource is abstract.
+
+Money is a Resource.
+Money has a Currency.
+Money has a Double called amount.
+
+Item is a Resource.
+Item has an ItemType.
+Item has a Double called quantity.
+
+Country is Data.
+Country is abstract.
+
+Denmark is Country.
+
+OrderLine is Data.
+OrderLine has an Item.
+OrderLine has Money called unitPrice.
+OrderLine has a Double called vatPercentage.
+
+CustomerStatistics is Data.
+CustomerStatistics has a Customer entity.

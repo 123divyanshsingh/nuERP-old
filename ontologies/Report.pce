@@ -1,0 +1,8 @@
+Inventory is a Report.
+Inventory has a list of Item called availableItems.
+
+Customers is a Report.
+Customers has a list of CustomerStatistics.
+
+Items is a Report.
+Items has a list of Item.
